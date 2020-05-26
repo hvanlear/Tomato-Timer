@@ -5,6 +5,7 @@ const resetBtn = document.querySelector("#reset");
 const circle = document.querySelector("circle");
 const pomCounter = document.querySelector(".pomCounter");
 const pomAmount = document.querySelector(".pomAmount");
+const endSound = new Audio("finishAlert.mp3");
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 circle.setAttribute("stroke-dasharray", perimeter);
@@ -23,6 +24,7 @@ const timer = new Timer(durationInput, startBtn, pauseBtn, {
   onComplete() {
     console.log("timer is completed");
     promdromoCount();
+    endSound.play();
   },
 });
 

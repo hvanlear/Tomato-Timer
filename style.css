@@ -23,6 +23,15 @@ svg {
   margin-top: 20px;
 }
 
+.pomCounter,
+.pomAmount {
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
 #counterBox {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }

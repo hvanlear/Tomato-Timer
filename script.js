@@ -3,6 +3,8 @@ const startBtn = document.querySelector("#start");
 const pauseBtn = document.querySelector("#pause");
 const resetBtn = document.querySelector("#reset");
 const circle = document.querySelector("circle");
+const pomCounter = document.querySelector(".pomCounter");
+const pomAmount = document.querySelector(".pomAmount");
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 circle.setAttribute("stroke-dasharray", perimeter);
@@ -33,9 +35,10 @@ function promdromoCount() {
   } else {
     localStorage.promdromo = 1;
   }
-  document.querySelector(
-    ".pomCounter"
-  ).innerHTML = `Total Poms:  ${localStorage.promdromo} on ${date}`;
+  pomCounter.innerHTML = `Total Poms:  <b>${localStorage.promdromo} on ${date}</b>`;
+  pomAmount.innerHTML = `Total Time:  <b>${
+    localStorage.promdromo * 25
+  } minutes</b>`;
 }
 
 resetBtn.addEventListener("click", () => {

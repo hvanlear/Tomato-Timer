@@ -4,8 +4,13 @@
   font-size: 20px;
 }
 
+body {
+  background-color: #121212;
+}
+
 h1 {
   font-size: 40px;
+  color: whitesmoke;
 }
 
 svg {
@@ -19,12 +24,17 @@ svg {
   flex-direction: column;
 }
 
+button {
+  cursor: pointer;
+}
+
 .controls {
   margin-top: 20px;
 }
 
 .pomCounter,
 .pomAmount {
+  color: whitesmoke;
   line-height: 30px;
   letter-spacing: 1px;
 }

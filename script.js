@@ -5,7 +5,7 @@ const resetBtn = document.querySelector("#reset");
 const circle = document.querySelector("circle");
 const pomCounter = document.querySelector(".pomCounter");
 const pomAmount = document.querySelector(".pomAmount");
-const endSound = new Audio("finishAlert.mp3");
+const endSound = new Audio("media/finishAlert.mp3");
 
 const perimeter = circle.getAttribute("r") * 2 * Math.PI;
 circle.setAttribute("stroke-dasharray", perimeter);

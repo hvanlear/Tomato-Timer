@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Promdromo Counter</h1>
+      <svg height="400" width="400">
+        <!-- half the permeiter of the circle 282 -->
+        <circle
+          r="190"
+          cx="200"
+          cy="200"
+          fill="transparent"
+          stroke-width="15"
+          transform="rotate(-90 200 200)"
+        />
+      </svg>
+      <div class="controls">
+        <input id="duration" value="1500" />
+        <button id="start">START</button>
+        <button id="pause">PAUSE</button>
+        <button id="reset">RESET</button>
+      </div>
+
+      <div id="counterBox">
+        <span class="pomCounter"></span>
+      </div>
+    </div>
+
+    <script src="timer.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
